@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <div id="root">
+        <header class="header">
+            <img class="h_logo" src="./img/logo1.jpg">
+            <h1 class="h_title">Registration</h1>
+        </header>
+        <nav class="g_nav">
+            <ul class="g_nav__menu">
+                 <li class="g_nav__dropdown">
+                    
+                    <button class="g_nav__button"><a class="g_nav__link" href="./index.html"><gg-icon class="gg-home-alt "></gg-icon>Home</a></button>
+                  
+                 </li>
+                 <li class="g_nav__dropdown">
+                    
+                    <button class="g_nav__button"><a class="g_nav__link" href="./about.html">About Dogs</a></button>
+                  
+
+                 
+                </li>
+                <li class="g_nav__dropdown">
+                  
+                    <button class="g_nav__button"><a class="g_nav__link" href="./register.html">Register</a></button>
+                  
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <form class="form" action="/submit" method="post">
+                <label class="Register_name">
+                    
+                    <span class="R_name">Name: </span>
+                    
+                    <input class="Register_name__input" type="text" name="RegistrationName" placeholder="Registration person name" required>
+                </label>
+                
+                <label class="Register_email">
+                    
+                    <span class="R_email">E-mail: </span>
+                    
+                    <input class="Register_email__input" type="text" name="RegistrationEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Kindly enter email address" required>
+                </label>
+            
+                <label class="Register_checkbox">
+                    <input class="Register_checkbox__check" type="checkbox" name="annoy_me" value="True" checked>
+                    <span class="checkbox">I agree with all the policy mentioned</span>
+                </label>
+                
+                <label class="Register_tier">
+                    <span class="tier">Choose  the Tier</span>
+                    <select class="Register_tier__check" name="tier" required>
+                        <option value="">Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </label>
+                <button type="submit">Register</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__object"><a  href="#">Privacy Policy</a></li>
+                    <li class="footer__object"><a  href="#">Join Us</a></li>
+                    <li class="footer__object"><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

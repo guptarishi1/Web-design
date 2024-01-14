@@ -1,0 +1,140 @@
+.form{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:0.5rem;
+    padding: 20px;
+}
+form{
+
+display: grid;
+
+grid-template-columns: repeat(24,1fr);
+
+gap: 0.1rem;
+
+/* padding: 20px; */
+
+justify-content: flex-start;
+}
+
+label{
+    margin-top: 40px;
+}
+
+.Register_name,.Register_email{
+    grid-column: span 24;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0rem;
+}
+
+.R_name,.R_email{
+    grid-column: span 3;
+    justify-self: center;
+    font-size: x-large;
+}
+
+.Register_name__input,.Register_email__input{
+    grid-column: span 7;
+}
+
+.Register_checkbox{
+    grid-column: span 24;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.5rem;
+}
+
+.Register_checkbox__check{
+    grid-column: span 2;
+    justify-self:right;
+}
+
+.checkbox{
+    grid-column: span 4;
+    justify-self: center;
+    font-size: larger;
+}
+
+.Register_tier{
+    grid-column: span 24;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-items: center;
+}
+
+.tier{
+    grid-column: span 6;
+    font-size: 1.5Rem;
+    justify-content: center;
+    justify-items: end;
+}
+
+.Register_tier__check{
+    grid-column: span 1;
+    justify-items: flex-start;
+    justify-content: left;
+}
+
+button{
+    grid-column: span 24;
+    height: 50px;
+    
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin: 1Rem;
+}
+    
+@media  screen and (max-width:50rem) {
+    #root{
+        font-size: 1rem;
+    }
+
+    .footer__object{
+        grid-column: span 3;
+    }
+
+    .R_name,.R_email{
+        justify-self:left;
+        font-size: 1rem;
+    }
+    .h_title{
+        font-size: 1.5rem;
+    }
+    
+
+    .Register_name__input,.Register_email__input{
+        grid-column: span 12;
+        
+    }
+
+    .Register_checkbox__check{
+        font-size: 1rem;
+        grid-column: span 1;
+        justify-self:baseline;
+    }
+
+    .Register_tier{
+        font-size: 1rem;
+    }
+    
+    .checkbox{
+        grid-column: span 10;
+    }
+
+    .tier{
+        grid-column: span 10;
+        font-size: 1rem;
+    }
+
+    .Register_tier__check{
+        grid-column: span 10;
+    }
+    .footer__menu{
+        display:block;
+        margin-right: 1.5rem;
+    
+    
+
+    }
+}
